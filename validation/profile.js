@@ -52,7 +52,6 @@ module.exports = function validateProfileInput(data) {
       errors.linkedin = "Helytelen URL";
     }
   }
-
   return {
     errors,
     isValid: isEmpty(errors),

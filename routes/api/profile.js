@@ -87,7 +87,6 @@ router.post(
 
       return res.status(400).json(errors);
     }
-
     const profileFields = {};
     profileFields.user = req.user.id;
     if (req.body.handle) profileFields.handle = req.body.handle;
@@ -98,7 +97,6 @@ router.post(
     if (typeof req.body.skills !== "undefined") {
       profileFields.skills = req.body.skills.split(",");
     }
-
     profileFields.social = {};
       if (req.body.facebook) profileFields.social.facebook = req.body.facebook;
       if (req.body.instagram) profileFields.social.instagram = req.body.instagram;
@@ -106,7 +104,6 @@ router.post(
       if (req.body.tiktok) profileFields.social.tiktok = req.body.tiktok;
       if (req.body.youtube) profileFields.social.youtube = req.body.youtube;
       if (req.body.linkedin) profileFields.social.linkedin = req.body.linkedin;
-
 
     Profile.findOne({ user: req.user.id }).then((profile) => {
       if (profile) {

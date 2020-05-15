@@ -2,12 +2,8 @@ const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
 const passport = require("passport");
-
-
 const Hike = require("../../models/Hike");
-
 const Profile = require("../../models/Profile");
-
 
 const validateHikeInput = require("../../validation/hike");
 
@@ -45,7 +41,6 @@ router.post(
             arrive: req.body.arrive,
             from: req.body.from,
             to: req.body.to,
-
             name: req.body.name,
             avatar: req.body.avatar,
             user: req.user.id,

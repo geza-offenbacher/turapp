@@ -35,7 +35,6 @@ module.exports = function validateHikeInput(data) {
     if (Validator.isEmpty(data.from)) {
         errors.from = "Indulási dátum megadása kötelező";
     }
-
     return {
         errors,
         isValid: isEmpty(errors),

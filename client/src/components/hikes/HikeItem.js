@@ -57,8 +57,6 @@ class HikeItem extends Component {
                   <a> - <Moment format="YYYY.MM.DD">{hike.to}</Moment> </a>
               )}
             </p>
-
-
             {showActions ? (
               <span>
                 <button

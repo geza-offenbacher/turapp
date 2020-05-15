@@ -2,7 +2,7 @@
 
 
 
-### `npm run dev`
+### `npm run turapp`
 A project futtatását az  paranccsal érdemes indítani.
 
 Nyissuk meg [http://localhost:3000](http://localhost:3000) a böngészőben a használathoz.

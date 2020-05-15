@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { loginUser } from '../../actions/authActions';
 import TextFieldGroup from '../common/TextFieldGroup';
-// import InputGroup from "../common/InputGroup";
-
-
 
 class Login extends Component {
   constructor() {
